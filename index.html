@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <title>To Do Template</title>
+  </head>
+  <body class="flex w-full h-lvh">
+    <aside class="flex flex-col w-[300] bg-zinc-700 text-slate-100 p-4 gap-4">
+      <header class="font-bold mb-1 text-lg flex items-center">
+        <div>Jonh Doe</div>
+      </header>
+      <section>
+        <input
+          type="text"
+          placeholder="Search"
+          class="border border-zinc-200 w-full text-sm rounded-md px-2 py-1 bg-zinc-500 text-zinc-200 placeholder:text-zinc-200 outline-none ring-purple-400 focus:ring-2"
+        />
+      </section>
+      <section class="">
+        <ul class="space-y-1">
+          <li
+            class="space-x-1 cursor-pointer px-1 py-[2px] hover:bg-zinc-600 rounded-sm"
+          >
+            <span class="text-green-300 font-semibold">☼</span>
+            <span class="text-sm text-green-300">Today</span>
+          </li>
+          <li
+            class="space-x-1 cursor-pointer px-1 py-[2px] hover:bg-zinc-600 rounded-sm"
+          >
+            <span class="text-pink-300 font-semibold">⭒</span>
+            <span class="text-sm text-pink-300">Important</span>
+          </li>
+          <li
+            class="space-x-1 cursor-pointer px-1 py-[2px] hover:bg-zinc-600 rounded-sm"
+          >
+            <span class="text-blue-400 font-semibold">⌂</span>
+            <span class="text-sm text-blue-400">Tasks</span>
+          </li>
+        </ul>
+      </section>
+      <div class="bg-zinc-500 w-full h-[1px]"></div>
+      <section class="flex-1">
+        <ul class="space-y-1">
+          <li
+            class="space-x-1 cursor-pointer px-1 py-[2px] hover:bg-zinc-600 rounded-sm"
+          >
+            <span class="text-purple-400 font-semibold">≡</span
+            ><span class="text-sm">My List #1</span>
+          </li>
+          <li
+            class="space-x-1 cursor-pointer px-1 py-[2px] hover:bg-zinc-600 rounded-sm"
+          >
+            <span class="text-purple-400 font-semibold">≡</span
+            ><span class="text-sm">My List #2</span>
+          </li>
+          <li
+            class="space-x-1 cursor-pointer px-1 py-[2px] hover:bg-zinc-600 rounded-sm"
+          >
+            <span class="text-purple-400 font-semibold">≡</span
+            ><span class="text-sm">My List #3</span>
+          </li>
+        </ul>
+      </section>
+      <section class="">
+        <button
+          class="rounded-md px-2 py-[2px] cursor-pointer hover:bg-zinc-900"
+        >
+          <span>+</span>
+          <span class="text-sm">New List</span>
+        </button>
+      </section>
+    </aside>
+    <main class="flex-1 bg-zinc-900 flex flex-col gap-4 p-4">
+      <header class="flex items-center mb-[2px]">
+        <div class="flex-1 text-purple-400 font-bold text-lg">List Title</div>
+        <div class="space-x-[2px]">
+          <button class="bg-zinc-700 text-zinc-200 px-[6px] rounded-md">
+            ✎
+          </button>
+          <button class="bg-zinc-700 text-zinc-200 px-[6px] rounded-md">
+            ⌽
+          </button>
+          <button class="bg-zinc-700 text-zinc-200 px-[6px] rounded-md">
+            ⋯
+          </button>
+        </div>
+      </header>
+      <section class="flex-1 text-slate-100 space-y-2">
+        <ul class="space-y-1">
+          <li class="flex gap-4 rounded-md px-4 py-2 bg-zinc-700">
+            <div><input type="checkbox" /></div>
+            <div class="flex-1 text-zinc-300 text-sm">Task #1</div>
+            <div>☆</div>
+          </li>
+          <li class="flex gap-4 rounded-md px-4 py-2 bg-zinc-700">
+            <div><input type="checkbox" /></div>
+            <div class="flex-1 text-zinc-300 text-sm">Task #2</div>
+            <div>☆</div>
+          </li>
+          <li class="flex gap-4 rounded-md px-4 py-2 bg-zinc-700">
+            <div><input type="checkbox" /></div>
+            <div class="flex-1 text-zinc-300 text-sm">Task #3</div>
+            <div>☆</div>
+          </li>
+        </ul>
+        <div>
+          <span
+            class="text-purple-400 text-xs bg-zinc-800 px-1 py-[2px] rounded-md"
+            >Completed</span
+          >
+        </div>
+        <ul class="space-y-1">
+          <li class="flex gap-4 rounded-md px-4 py-2 bg-zinc-700">
+            <div><input type="checkbox" checked /></div>
+            <div class="flex-1 text-zinc-300 text-sm line-through">Task #1</div>
+            <div>☆</div>
+          </li>
+          <li class="flex gap-4 rounded-md px-4 py-2 bg-zinc-700">
+            <div><input type="checkbox" checked /></div>
+            <div class="flex-1 text-zinc-300 text-sm line-through">Task #2</div>
+            <div>☆</div>
+          </li>
+        </ul>
+      </section>
+      <section class="">
+        <input
+          type="text"
+          placeholder="Add task"
+          class="rounded-md px-3 py-[10px] w-full text-zinc-300 text-sm bg-zinc-700 outline-none ring-purple-400 focus:ring-2"
+        />
+      </section>
+    </main>
+    <aside class="w-[300] bg-zinc-700 text-slate-100 p-4 flex flex-col gap-3">
+      <header>
+        <div>
+          <input
+            type="text"
+            value="Task #1"
+            class="bg-zinc-700 w-full px-2 py-1 outline-none ring-purple-400 focus:ring-2 rounded-md text-sm"
+          />
+        </div>
+      </header>
+      <section class="flex-1">
+        <div class="bg-zinc-500 w-full h-[1px] mb-1"></div>
+        <input
+          type="date"
+          class="my-2 bg-zinc-700 w-full px-2 py-1 outline-none ring-purple-400 focus:ring-2 rounded-md text-sm text-zinc-200"
+        />
+        <div class="bg-zinc-500 w-full h-[1px] my-1"></div>
+        <textarea
+          placeholder="Add note"
+          rows="4"
+          class="w-full my-2 px-2 py-1 bg-zinc-700 placeholder:text-zinc-400 text-sm placeholder:text-sm outline-none ring-purple-400 focus:ring-2 rounded-md"
+        ></textarea>
+      </section>
+      <footer class="flex justify-between items-center">
+        <button class="rounded-md px-1 cursor-pointer hover:bg-zinc-900">
+          ﹥
+        </button>
+        <span class="text-xs">Created Sun, May 26</span>
+        <button class="rounded-md px-1 cursor-pointer hover:bg-zinc-900">
+          ⊗
+        </button>
+      </footer>
+    </aside>
+  </body>
+</html>
